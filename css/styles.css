@@ -1,0 +1,105 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    /*background-color: rgb(156, 222, 248);*/
+    background-color: #6CD3EF;
+    background-image: url('../img/back.jpg');
+    background-size: 50%;
+    
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: transparent;
+  
+}
+
+.max-view-height{
+    height: 100vh;
+}
+
+.flex-direction-column{
+    flex-direction: column;
+}
+
+/*The midle of the total  father width*/
+#container-cup{
+    width: 50%;
+    
+    
+}
+
+/*">" means all video tags */
+#container-cup > video{
+    width: 100%;
+}
+
+.display-none {
+    display: none;
+}
+
+
+#container-button-cup{
+    padding: 10px 0;
+    width: 50%;
+    justify-content: space-around;
+}
+
+
+
+.button{
+  align-items: center;
+  background-color: #B6E9F7;
+  border: 2px solid #111;
+  border-radius: 20px;
+  box-sizing: border-box;
+  color: #111;
+  cursor: pointer;
+  display: flex;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 16px;
+  height: 48px;
+  justify-content: center;
+  line-height: 24px;
+  max-width: 100%;
+  padding: 0 25px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+}
+
+.button:after {
+  background-color: #111;
+  border-radius: 20px;
+  content: "";
+  display: block;
+  height: 48px;
+  left: 0;
+  width: 100%;
+  position: absolute;
+  top: -2px;
+  transform: translate(8px, 8px);
+  transition: transform .2s ease-out;
+  z-index: -1;
+}
+
+.button:hover:after {
+  transform: translate(0, 0);
+}
+
+.button:active {
+  background-color: #ffdeda;
+  outline: 0;
+}
+
+.button:hover {
+  outline: 0;
+}
+
